@@ -1,4 +1,4 @@
-# Programming Languages Project Assignments
+# Programming Languages Project Assignments (2024-1)
 **Instructor:** Prof. Hwansoo Han
 
 
