@@ -1,31 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string>
+#define string std::string
 
-auto main() {
-	auto i, j, k;
-	auto a, b, c;
-	auto f, g, h;
-	auto x, y, z;
+auto main( ) {
+    auto s, i, x, last = 100;
 
-	i = 10; 
-	j = 20;
-	a = 'A'; 
-	b = 'a';
-	f = 3.14; 
-	g = 2.718;
-	x = true;
-	y = false;
+    s = 0;
+    i = 1;
+    x = true;
+    while (x == true) {
+	s = s + i;
 
-	k = j / i; 
-	c = 'T' + (b - a);
-	h = f * g;
-	z = x && y;
+	i = i + 1;
+        x = i < last;
+    }
 
-	printf("k = %d,  c = '%c',  h = %lf,  z = %s\n", k, c, h, z == true ? "true" : "false");
+    printf("sum(%d) = %f\n", last, s);
 
-	return 0;
+    return s;
 }
 
-
-	
